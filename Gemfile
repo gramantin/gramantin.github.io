@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.0.0"
-gem "moving"
+gem "jekyll", "~> 4.0"
+gem "type-on-strap"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
+  gem "jekyll-paginate"
+  gem 'jekyll-compose'
 end
 
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
